@@ -1,9 +1,9 @@
 #include "Threads.h"
 #include <vector>
 
-std::vector<tcpp::TimerCall> vec;
+std::vector<dt::TimerCall> vec;
 
-void tcpp::Timer::timerHandler(int sig, siginfo_t *si, void *uc)
+void dt::Timer::timerHandler(int sig, siginfo_t *si, void *uc)
 {
     timer_t *tidp = (timer_t *)si->si_value.sival_ptr;
     printf("time handler is triggered\n");
@@ -17,7 +17,7 @@ void tcpp::Timer::timerHandler(int sig, siginfo_t *si, void *uc)
 }
 
 
-timer_t tcpp::Timer::create(long expireMS, int intervalMS, void (* callbackFunc) (void *), void * para)
+timer_t dt::Timer::create(long expireMS, int intervalMS, void (* callbackFunc) (void *), void * para)
 {
     //unsigned int id = getTimerId();
     timer_t id;
@@ -38,7 +38,7 @@ timer_t tcpp::Timer::create(long expireMS, int intervalMS, void (* callbackFunc)
 }
 
 
-void tcpp::Timer::remove(timer_t& timerID)
+void dt::Timer::remove(timer_t& timerID)
 {
     size_t j = 0;
     bool found = false;

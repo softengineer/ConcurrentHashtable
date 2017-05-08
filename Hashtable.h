@@ -9,7 +9,7 @@
 #include "Threads.h"
 #include "HashNode.h"
 
-namespace tcpp { 
+namespace dt { 
          
     const int defaultCapacity = 100;
     const float defaultLoadFactor = 0.75f;

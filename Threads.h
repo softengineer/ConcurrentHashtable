@@ -12,7 +12,7 @@
 
 #include "Common.h"
 
-namespace tcpp { 
+namespace dt { 
    
     // A class ensuplates pthread_mutex
     class Mutex :noncopyable {

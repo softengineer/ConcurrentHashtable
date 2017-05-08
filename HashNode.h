@@ -4,7 +4,7 @@
 #include <cstddef>
 #include "Common.h"
 
-namespace tcpp { 
+namespace dt { 
     
     // Hash node class template
     template <typename K, typename V>

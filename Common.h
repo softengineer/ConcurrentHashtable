@@ -7,7 +7,7 @@
 #include <sys/time.h>   /* gettimeofday, timeval (for timestamp in microsecond) */
 
 
-namespace tcpp { 
+namespace dt { 
         
         typedef long long int timemilliseconds;
         
